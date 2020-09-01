@@ -9,15 +9,36 @@
 	<title>Donation </title><!-- 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<!-- jQuery library -->
 	<script src="https://use.fontawesome.com/fefcf99aee.js"></script>
+	<style>
+		body{
+			background-color: skyblue;
+		}
+		.jumbotron{
+			background-color: #212121;
+			color: white;
+		}
+		#header #quote{
+			font-size: 250%;
+		}
+		
+		
+		
+	</style>
 </head>
 <body>
-	
+<div class="jumbotron">
+	<div id = "header" class="d-block container">
+		<p id ="quote"class="text-center">Caring has the gift of making the ordinary special</p>
+		<p class="text-center "><em>-George R Bach</em></p>
+	</div>
+
+</div>
 <div class="container">
-	<div class = "d-flex row justify-content-center">
-		<div class="col col-sm-6 shadow-lg p-3 m-5 bg-white rounded">
+	<div class = "row justify-content-center mt-4">
+		<div class="col-11 col-sm-6 shadow-lg p-3 m-5 bg-white rounded">
 			<form method = "post" action = "pay.php">
 				<div class="form-group">
 					<label for="name">Name</label>

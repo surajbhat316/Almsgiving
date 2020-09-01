@@ -13,14 +13,14 @@
             "email" => $email,
             "buyer_name" => $name,
             "allow_repeated_payments"=> false,
-            "redirect_url" => "http://localhost:8080/Payment/thankyou.php"
-            ));
-         print_r($response);
+            "redirect_url" => "http://localhost:8080/Almsgiving/thankyou.php"
+             ));
+        //  print_r($response);
     $pay_url = $response['longurl'];
     header("Location:$pay_url");
     }
     catch (Exception $e) {
-        print('Error: ' . $e->getMessage());
+        print('Error: '. $e->getMessage());
     }
 ?>
 

@@ -15,10 +15,24 @@
 	<!-- jQuery library -->
 	<script src="https://use.fontawesome.com/fefcf99aee.js"></script>
     <title>Thank You</title>
+    <style>
+        .jumbotron{
+			background-image: url("img/thanks.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+     </style>
 </head>
 <body>
+<div class="jumbotron img-reesponsive">
+	<div id = "header" class="d-block container">
+		
+	</div>
+
+</div>
     <div class="container">
-        <h1 class = "text-center">Thank You </h1>
+        
         <?php
             include 'instamojo/Instamojo.php';
             $api = new Instamojo\Instamojo('test_260b8b845b9a9228f9bd14feee4', 'test_74a70267c8296a34187858ea6ad', 'https://test.instamojo.com/api/1.1/');
@@ -50,6 +64,7 @@
                     </tr>
                 </tbody>
             </table>
+            <a href="index.html">Go to Home Page</a>
         </div>    
         
     <?php
@@ -60,6 +75,8 @@
             
         ?>
     </div>
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 	 integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	  crossorigin="anonymous"></script>
